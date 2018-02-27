@@ -1,0 +1,83 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.erji{
+	width: 100vw;
+	height: 100vh;
+}
+.head{
+	width: 100vw;
+	height: 21vw;
+	position: fixed;
+	background: white;
+}
+.title{
+	width: 100vw;
+	height: 13vw;
+	line-height: 13vw;
+	text-align: center;
+	border-bottom: 1px solid #B2B2B2;
+	box-sizing: border-box;
+	/*background: chocolate;*/
+}
+.title p{
+	font-size: 1.5em;
+}
+.erji{
+	width: 100vw;
+	height: 8vw;
+	overflow: hidden;
+	overflow-x: scroll;
+	position: relative;
+	top: 65%;
+}
+.erji::-webkit-scrollbar{
+	display: none;
+}
+.erji_list{
+	width: 150vw;
+}
+.erji_list li{
+	list-style: none;
+	width: 16.66vw;
+	height: 8vw;
+	line-height: 8vw;
+	text-align: center;
+	font-size: 0.8em;
+	border-bottom:2px solid white;
+	box-sizing: border-box;
+	background: white;
+	float: left;
+}
+/*.erji_list li:hover{
+	border-bottom: 4px solid #AE000D;
+	color: #AE000D;
+}
+.erji_list li:hover div{
+	display: block;
+}*/
+.con{
+	width: 100vw;
+	height: 100vh;
+	/*background: chartreuse;*/
+}
+.con div{
+	width: 100vw;
+	height: 52vw;
+	margin-top: 2vw;
+}
+.con div:first-child{
+	width: 100vw;
+	height: 41vh;
+	margin-top: 0;
+}
+.con div img{
+	width: 100vw;
+	height: 52vw;
+}
+.con div:first-child img{
+	width: 100vw;
+	height: 52vw;
+	margin-top:21vw;
+}

@@ -1,0 +1,118 @@
+/*这里是更改默认样式*/
+*,p,h4{
+	margin:0;
+	padding:0;
+	text-decoration: none;
+	list-style: none;
+}
+/*蒙版*/
+.nzk-mb{
+	width: 100%;
+	height: 100%;
+	background:rgba(0,0,0,0.4);
+	z-index: 2;
+	position:absolute;
+	bottom:0;
+	z-index: 500;
+	display: none;
+}
+/*这里是商品*/
+.nzk-kc{
+	width:100%;
+	height:75vh;
+	background: white;
+	position:fixed;
+	bottom:0;
+	
+}
+.nzk-kc-qd{
+	width:100%;
+	height:7vh;
+	background:#ff0036;
+	position:absolute;
+	bottom:0;
+	text-align:center;
+	color:white;
+	font-size:16px;
+}
+.nzk-kc-xx{
+	width: 93%;
+	height: 68vh;
+	margin: auto;
+}
+.nzk-kc-xx-a{
+	width: 100%;
+	height: 23%;
+	position:relative;
+	border-bottom:1px solid #eaeaea;
+}
+/*这里是点击消失的地方*/
+.nzk-kc-xx-a>span{
+	position:absolute;
+	top: 7%;
+	right:0;
+	font-weight: 700;
+	color: #696969;
+}
+.nzk-kc-xx-a-sp{
+	width:35%;
+	height: 120%;
+	position: relative;
+	top:-40%;
+	border: 1px solid #999;
+	background: white;
+	border-radius:7px;
+}
+.nzk-kc-xx-a-sp>img{
+	width:100%;
+	height:100%;
+	border-radius:7px;
+}
+.nzk-kc-xx-a-sl{
+	position: absolute;
+	top: 10%;
+	left: 39%;
+}
+.nzk-kc-xx-a-sl>li>h4{
+	color:#ff0036;
+}
+.nzk-kc-xx-a-sl>li>p{
+	color:#0F0F0F;
+}
+/*第二个信息栏*/
+.nzk-kc-xx-b{
+	width: 100%;
+	height:23%;
+	position:relative;
+	border-bottom:1px solid #eaeaea;
+	padding-top: 2%;
+}
+.nzk-kc-xx-b-xz{
+	margin-top: 2vh;
+}
+.nzk-kc-xx-b-xz>li{
+	float: left;
+	margin-right: 3px;
+}
+.nzk-kc-xx-b-xz>li>p{
+	border-radius: 8px;
+	padding: 0.5em 0.8em;
+	background: #ff0036;
+	color: white;
+	cursor: pointer;
+}
+/*第三栏购买数量信息*/
+.nzk-kc-xx-c{
+	width: 100%;
+	height:13vh;
+	position:relative;
+	border-bottom:1px solid #eaeaea;
+}
+.nzk-kc-xx-c>p{
+	line-height: 12vh;
+}
+.nzk-kc-xx-c-xz{
+	position: absolute;
+	top: 25%;
+	right: 3%;
+}

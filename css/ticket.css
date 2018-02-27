@@ -1,0 +1,29 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.guowu{
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+    top: 0px;
+    display: none;
+}
+.Ttitle{
+	width: 100vw;
+	height: 13vw;
+	line-height: 13vw;
+	text-align: center;
+	border-bottom: 1px solid #B2B2B2;
+	box-sizing: border-box;
+	background: white;
+	/*position: fixed;
+	z-index: 1 !important;*/
+}
+.Ttitle>span{
+	font-size: 1.3em;
+}
+.guowu>img{
+	width: 100vw;
+	height: 19vw;
+}

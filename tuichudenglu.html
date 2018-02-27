@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
+		<link rel="stylesheet" href="css/tuichudenglu.css"/>
+		<script src="js/jquery-1.12.0.js"></script>
+		<script src="js/bootstrap.js"></script>
+	</head>
+	<body>
+		<div class="container-fluid text-center shezhi">
+			<span class="glyphicon glyphicon-menu-left pull-left houtui" style="margin-top: 3px;"></span>
+			设置
+		</div>
+		<div class="form-control-static" style="background-color: #ffffff;font-size: 16px;padding-left: 15px; margin-top: 20px;">
+			<ul class="nav nav-tabs szkq_01" style="margin-top: 15px;padding-bottom: 15px;color: black;">
+				<li class="glyphicon glyphicon-stats" style="margin-top: 2px;"></li>
+				<li style="margin-left: 15px;">开启省流量模式</li>
+				<li class="pull-right kq_01"><span class="kq_02">ON</span></li>
+			</ul>
+			<ul class="nav nav-tabs szkq_01 bdhc" style="margin-top: 15px;padding-bottom: 15px; border: none;">
+				<li class="glyphicon glyphicon-trash" style="margin-top: 2px;"></li>
+				<li style="margin-left: 15px;">清楚本地缓存</li>
+				<li class="glyphicon glyphicon-chevron-right pull-right kq_03 bdhc_01"></li>
+			</ul>
+		</div>
+		<div class="form-control-static" style="background-color: #ffffff;font-size: 16px;padding-left: 15px; margin-top: 20px;">
+			<ul class="nav nav-tabs szkq_01 bdhc_02" style="margin-top: 15px;padding-bottom: 15px;">
+				<li class="glyphicon glyphicon-thumbs-up" style="margin-top: 2px;"></li>
+				<li style="margin-left: 15px;">给我们评分</li>
+				<li class="glyphicon glyphicon-chevron-right pull-right kq_03 li_02"></li>
+			</ul>
+			<ul class="nav nav-tabs szkq_01 bdhc_03" style="margin-top: 15px;padding-bottom: 15px; border: none;">
+				<li class="glyphicon glyphicon-phone-alt" style="margin-top: 2px;"></li>
+				<li style="margin-left: 15px;">客服热线</li>
+				<li class="glyphicon glyphicon-chevron-right pull-right kq_03 li_03"></li>
+			</ul>
+		</div>
+		<div class="form-group btn_01">
+			<button type="button" class="btn btn-block btn_02 tuchu">退出登录</button>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+			var a = 0;
+			$(".kq_01").on("click",function(){
+				a++;
+				if(a%2==0){
+					$(".kq_02").css("left","0px");
+					$(".kq_01").css("background-color","");
+					$(".kq_02").html("ON");
+				}else{
+					$(".kq_02").css("left","30px");
+					$(".kq_01").css("background-color","#5CB85C");
+					$(".kq_02").html("OFF");
+				}
+				
+			})
+			$(".tuchu").on("click",function(){
+				$(window).attr("location","login.html");
+			})
+			$(".bdhc").on("mousemove",function(){
+				$(".bdhc").css("color","red");
+				$(".bdhc").find(".bdhc_01").css("color","red");
+			})
+			$(".bdhc").on("mouseout",function(){
+				$(".bdhc").css("color","");
+				$(".bdhc").find(".bdhc_01").css("color","");
+			})
+			$(".bdhc_02").on("mousemove",function(){
+				$(".bdhc_02").css("color","red");
+				$(".bdhc_02").find(".li_02").css("color","red");
+			})
+			$(".bdhc_02").on("mouseout",function(){
+				$(".bdhc_02").css("color","");
+				$(".bdhc_02").find(".li_02").css("color","");
+			})
+			$(".bdhc_03").on("mousemove",function(){
+				$(".bdhc_03").css("color","red");
+				$(".bdhc_03").find(".li_03").css("color","red");
+			})
+			$(".bdhc_03").on("mouseout",function(){
+				$(".bdhc_03").css("color","");
+				$(".bdhc_03").find(".li_03").css("color","");
+			})
+			$(".houtui").on("click",function(){
+				window.history.go(-1);
+				$(".houtui").css("color","#9D9D9D");
+			})
+		})
+	</script>
+</html>

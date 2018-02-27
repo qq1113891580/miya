@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
+		<link rel="stylesheet" href="css/tianxie.css"/>
+		<script src="js/jquery-1.12.0.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$(".btn_01").on("click",function(){
+					$(".btn_01").css("display","none");
+					$(".zxhq").css("display","block");
+					var k = 60;
+					var time = setInterval(function(){
+						k--;
+						$(".zxhq_01").html(k);
+						if(k<=1){
+							k=60;
+							$(".btn_01").css("display","block");
+					        $(".zxhq").css("display","none");
+					        clearInterval(time);
+						}
+					},1000);
+				})
+				$(".xyb").on("click",function(){
+					if($(".xymk").val()!="123456"){
+						$(".xieyi_01").css("display","block");
+					}else{
+						$(".xyb").on("click",function(){
+							$(window).attr("location","sjyz.html");
+						})
+					}
+				})
+				$(".xieyi_04").on("click",function(){
+					$(".xieyi_01").css("display","none");
+				})
+				$(".fanhui").on("click",function(){
+					window.history.go(-1);
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<div class="container-fluid diyi">
+				<p class="text-center" style="font-size: 24px;margin-top: 10px;">填写校验码</p>
+				<p class="guanbi"><span class="glyphicon glyphicon-menu-left xygb" style="font-size: 24px;"></span><span style="font-size: 15px;font-weight: 600;color: #543A1A;margin-left: 10px;">关闭</span></p>
+		</div>
+		<div class="container-fluid tbzc_01 text-center">
+			<button class="btn btn-default fanhui" type="submit">返回</button>
+			<p class="tzc">填写校验码</p>
+		</div>
+		<div class="container-fluid text-center sjg">
+			<p style="font-size: 16px;font-weight: 600;font-family: '宋体';">我们已经发送校验码到你的手机：</p>
+			<p style="font-size: 28px;font-weight: 600;color: red;">15240652174</p>
+		</div>
+		<div class="container-fluid" style="height: 50px; background-color: white; line-height: 50px; font-size: 16px;font-weight: 700;padding-top: 3px;">
+			<span>校验码</span>
+			<input type="text" class="xymk"/>
+			<span class="xymk_01"><span class="zxhq"><span class="zxhq_01" style="font-size: 18px;">60</span>秒后重新获取</span><button class="btn btn_01">获取验证码</button></span>
+		</div>
+		<div class="container-fluid anniu" style="margin-top: 20px;">
+			<button type="button" class="btn btn-lg btn-block xyb">下一步</button>
+		</div>
+		<div class="xieyi_01">
+	         <div class="xieyi_02">
+	             <p class="xieyi_03">验证码输入有误,请重新输入!</p>
+	             <p class="xieyi_04">确定</p>
+	         </div>
+	    </div>
+	</body>
+</html>

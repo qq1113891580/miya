@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+		<title>登录</title>
+		<link type="text/css" rel="stylesheet" href="css/login.css" />
+		<script src="js/jquery-1.12.0.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				var dl = /^[a-z0-9_-]{6,18}$/;
+				var zfmi = /^[a-zA-Z0-9_-]{6,20}$/;
+				$(".login_01").on("click",function(){
+					$(".login_01").css("background-color","orangered");
+					if(dl.test($(".inp1").val())==true && zfmi.test($(".inp2").val())==true){
+						$(".denglu_01").css("display","none");
+						$(window).attr("location","zhuce.html");
+					}else{
+						$(".denglu_01").css("display","block");
+						if($(".inp1").val()=="" && $(".inp2").val()==""){
+							$(".denglu_01").css("display","block");
+							$(".denglu_03").html("用户名、密码不能为空！");
+						}else{
+							if($(".inp1").val()==""){
+								$(".denglu_03").html("用户名不能为空！");
+							}else{
+								if(dl.test($(".inp1").val())==false){
+								    $(".denglu_03").html("用户名输入有误！");
+								}else{
+									if($(".inp2").val()==""){
+										$(".denglu_03").html("密码不能为空！");
+									}else{
+										if(zfmi.test($(".inp2").val())==false){
+											$(".denglu_03").html("输入的密码不正确！");
+										}
+									}
+								}
+							}
+						}
+					}
+				})
+				
+				$(".denglu_04").on("click",function(){
+					$(".denglu_01").css("display","none");
+				})
+				$(".duanxin").on("click",function(){
+					$(".duanxin").css("background-color","#DADADA");
+					$(window).attr("location","tianxieyam.html");
+				})
+				$(".detial_01").on("click",function(){
+					window.history.go(-1);
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<div id="content">
+			<div class="detial">
+				<a class="detial_01"><</a>
+				<p>详情</p>
+			</div>
+			<div class="toux">
+				<img src="img/360.jpg" />
+			</div>
+			<input type="text" class="inp1" placeholder="   手机号/邮箱/会员名"/>
+			<input type="password" class="inp2" placeholder="   请输入密码"/>
+			<div class="RegForget">
+				<a href="tianxie.html">免费注册</a><a href="tianxieyam.html">忘记密码</a>
+			</div>
+			<div class="login login_01">登录</div>
+			<div class="duanxin login">短信验证码登录</div>
+		</div>
+		<div class="denglu_01">
+	         <div class="denglu_02">
+	             <p class="denglu_03">用户名输入有误!</p>
+	             <p class="denglu_04">确定</p>
+	         </div>
+	    </div>
+	</body>
+</html>

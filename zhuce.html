@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
+		<link rel="stylesheet" href="css/zhuce.css"/>
+		<link rel="stylesheet" href="css/mui.min.css"/>
+		<link rel="stylesheet" href="css/classify.css"/>
+		<link rel="stylesheet" href="css/ticket.css"/>
+		<link rel="stylesheet" href="css/special.css"/>
+		<script src="js/jquery-1.12.0.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script src="js/mui.min.js"></script>
+	</head>
+	<body>
+		<!--我的页面-->
+		<div class="box">
+			<div class="container-fluid" style="background-color: #265A88;">
+				<p class="glyphicon glyphicon-shopping-cart img-circle gw"></p>
+				<div class="denglu text-center">
+					<p style="font-weight: 800;font-size: 15px;">你还没有登录哦</p>
+					<p class="msdl_01" style="margin-top: 3vh;"><span class="msdl">马上登录</span></p>
+				</div>
+			</div>
+		    <div class="container-fluid text-center q1">
+		        <div class="row dfk" style="margin-top: 1vh;">
+			    	<div class="col-xs-3">
+			    		<p class="glyphicon glyphicon-usd q3"></p>
+			    		<p class="ziti">待付款</p>
+			    	</div>
+			    	<div class="col-xs-3">
+			    		<p class="glyphicon glyphicon-road q3"></p>
+			    		<p class="ziti">待发货</p>
+			    	</div>
+			    	<div class="col-xs-3">
+			    		<p class="glyphicon glyphicon-saved q3"></p>
+			    		<p class="ziti">待收货</p>
+			    	</div>
+			    	<div class="col-xs-3">
+			    		<p class="glyphicon glyphicon-ok-circle q3"></p>
+			    		<p class="ziti">已完成</p>
+			    	</div>
+			    	<div class="col-xs-3">
+			    		<p class="glyphicon glyphicon-repeat q3"></p>
+			    		<p class="ziti" style="margin-left: -10px;white-space: nowrap;">售后/退款</p>
+			    	</div>
+		    	</div>
+		    </div>
+		    <div class="form-control-static dianji_01">
+				<ul class="nav nav-tabs lie_01">
+					<li class=" img-circle img-responsive glyphicon glyphicon-menu-hamburger q2"></li>
+					<li style="font-size: 18px; margin-left: 10px;">我的订单</li>
+					<li class="glyphicon glyphicon-chevron-right pull-right q2_tu"></li>
+				</ul>
+				<ul class="nav nav-tabs lie_01">
+					<li class=" img-circle img-responsive glyphicon glyphicon-map-marker q2"></li>
+					<li style="font-size: 18px; margin-left: 10px;">收货地址</li>
+					<li class="glyphicon glyphicon-chevron-right pull-right q2_tu"></li>
+				</ul>
+				<ul class="nav nav-tabs lie_01" style="margin-top: 20px;">
+					<li class=" img-circle img-responsive glyphicon glyphicon-question-sign q2"></li>
+					<li style="font-size: 18px; margin-left: 10px;">意见与反馈</li>
+					<li class="glyphicon glyphicon-chevron-right pull-right q2_tu"></li>
+				</ul>
+				<ul class="nav nav-tabs lie_01 tzhuan_01">
+					<li class=" img-circle img-responsive glyphicon glyphicon-cog q2"></li>
+					<li style="font-size: 18px; margin-left: 10px;">设置</li>
+					<li class="glyphicon glyphicon-chevron-right pull-right q2_tu"></li>
+				</ul>
+			</div>
+		</div>
+		<!--商品页面-->
+		<div class="box_01">
+			<div class="qbhd">
+				<div class="qbhd_01">
+					<p class="glyphicon glyphicon-repeat" style="margin-top: 5px; font-size: 18px;"></p>
+					<p style="margin-top: -10px; font-size: 12px;">全部</p>
+				</div>
+				<div class="qbhd_01 qbhd_02">
+					<p class="glyphicon glyphicon-menu-up" style="margin-top: 5px; font-size: 18px;"></p>
+					<p style="margin-top: -10px; font-size: 12px;">顶部</p>
+				</div>
+			</div>
+			<!--轮播图-->
+			<div id="slider" class="mui-slider lun_01" >
+			  <div class="mui-slider-group mui-slider-loop">
+			    <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+			    <div class="mui-slider-item mui-slider-item-duplicate">
+			      <a href="#">
+			        <img src="img/niuzai_01.jpg">
+			      </a>
+			    </div>
+			    <!-- 第一张 -->
+			    <div class="mui-slider-item">
+			      <a href="#">
+			        <img src="img/niuzai_01.jpg">
+			      </a>
+			    </div>
+			    <!-- 第二张 -->
+			    <div class="mui-slider-item">
+			      <a href="#">
+			        <img src="img/niuzai_02.jpg">
+			      </a>
+			    </div>
+			    <!-- 第三张 -->
+			    <div class="mui-slider-item">
+			      <a href="#">
+			        <img src="img/niuzai_03.jpg">
+			      </a>
+			    </div>
+			    <!-- 第四张 -->
+			    <div class="mui-slider-item">
+			      <a href="#">
+			        <img src="img/niuzai_04.jpg">
+			      </a>
+			    </div>
+			    <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+			    <div class="mui-slider-item mui-slider-item-duplicate">
+			      <a href="#">
+			        <img src="img/niuzai_01.jpg">
+			      </a>
+			    </div>
+			  </div>
+			  <div class="mui-slider-indicator">
+			    <div class="mui-indicator mui-active"></div>
+			    <div class="mui-indicator"></div>
+			    <div class="mui-indicator"></div>
+			    <div class="mui-indicator"></div>
+			  </div>
+			</div>
+			<div class="container-fluid mzjx">
+				<div class="container-fluid mzjx_01">
+					<div class="mzjx_02">
+                        <div class="p1"><img src="img/tu_01.jpg" class="img-responsive xbig"/></div>
+						<p class="p2">
+							<span style="font-size: 16px; color: #656565;">Top 50</span>
+							<br/>
+							<span style="font-size: 10px; color: #adadad;">小编精选热销商品</span>
+						</p>
+					</div>
+				</div>
+				<div class="container-fluid mzjx_01">
+					<div class="mzjx_02">
+                        <div class="p1"><img src="img/tu_02.jpg" class="img-responsive xbig"/></div>
+						<p class="p2">
+							<span style="font-size: 16px; color: #656565;">每周精选</span>
+							<br/>
+							<span style="font-size: 10px; color: #adadad;">每周精选商品推荐</span>
+						</p>
+					</div>
+				</div>
+				<div class="container-fluid mzjx_01">
+					<div class="mzjx_02">
+                        <div class="p1"><img src="img/tu_03.jpg" class="img-responsive xbig"/></div>
+						<p class="p2">
+							<span style="font-size: 16px; color: #656565;">超值购</span>
+							<br/>
+							<span style="font-size: 10px; color: #adadad;">小编精选热销商品</span>
+						</p>
+					</div>
+				</div>
+				<div class="container-fluid mzjx_01">
+					<div class="mzjx_02">
+                        <div class="p1"><img src="img/tu_04.jpg" class="img-responsive xbig"/></div>
+						<p class="p2">
+							<span style="font-size: 16px; color: #656565;">手机充值</span>
+							<br/>
+							<span style="font-size: 10px; color: #adadad;">全国话费充值服务</span>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid text-center sy_01">
+				<div class="sy_02">
+					<div><img src="img/erji.jpg" class="img-responsive center-block"/></div>
+					<p>Remax睿量 510耳机入...</p>
+					<p style="color: red;">￥<span style="font-size: 20px;">22.8</span><span style="color: #aaaaaa;text-decoration: line-through;font-size: 13px;">￥59.8</span></p>
+				</div>
+				<div class="pull-right sy_02">
+					<div><img src="img/niuzai_01.jpg" class="img-responsive center-block"/></div>
+					<p>Remax睿量 510耳机入...</p>
+					<p style="color: red;">￥<span style="font-size: 20px;">22.8</span><span style="color: #aaaaaa;text-decoration: line-through;font-size: 13px;">￥59.8</span></p>
+				</div>
+			</div>
+			<div class="container-fluid text-center sy_01" style="margin-top: 2vh;">
+				<div class="sy_02">
+					<div><img src="img/niuzai_02.jpg" class="img-responsive center-block"/></div>
+					<p>Remax睿量 510耳机入...</p>
+					<p style="color: red;">￥<span style="font-size: 20px;">22.8</span><span style="color: #aaaaaa;text-decoration: line-through;font-size: 13px;">￥59.8</span></p>
+				</div>
+				<div class="pull-right sy_02">
+					<div><img src="img/niuzai_03.jpg" class="img-responsive center-block"/></div>
+					<p>Remax睿量 510耳机入...</p>
+					<p style="color: red;">￥<span style="font-size: 20px;">22.8</span><span style="color: #aaaaaa;text-decoration: line-through;font-size: 13px;">￥59.8</span></p>
+				</div>
+			</div>
+			<div class="container-fluid text-center sy_01" style="margin-top: 2vh;margin-bottom: 10vh;">
+				<div class="sy_02">
+					<div class="sy_03">
+						<img src="img/niuzai_04.jpg" class="img-responsive center-block"/>
+						<div class="ljuan">
+						    <p class="sy_04"><span>领</span><span>3元卷</span></p>
+						</div>
+					</div>
+					<p>Remax睿量 510耳机入...</p>
+					<p style="color: red;">￥<span style="font-size: 20px;">22.8</span><span style="color: #aaaaaa;text-decoration: line-through;font-size: 13px;">￥59.8</span></p>
+				</div>
+				<div class="pull-right sy_02">
+					<div><img src="img/erji.jpg" class="img-responsive center-block"/></div>
+					<p>Remax睿量 510耳机入...</p>
+					<p style="color: red;">￥<span style="font-size: 20px;">22.8</span><span style="color: #aaaaaa;text-decoration: line-through;font-size: 13px;">￥59.8</span></p>
+				</div>
+			</div>
+		</div>
+		<!--分类-->
+		<div id="content">
+			<div class="title">
+				<p>分类</p>
+				<img src="img/search.png" class="fdj_01"/>
+			</div>
+			<div class="content">
+				<ul class="list">
+				<li><span>推荐</span>
+					<div class="right" style="overflow: hidden;overflow-y: scroll;">
+						<div>
+						<div class="ctitle"><img src="img/titlep.jpg"/></div>
+						<div class="more">
+							<div><a href="#"><img src="img/classify_01.jpg"/></a><p>牛仔裤</p></div>
+							<div><a href="#"><img src="img/classify_02.jpg"/></a><p>女卫衣</p></div>
+							<div><a href="#"><img src="img/classify_03.jpg"/></a><p>空气净化</p></div>
+							<div><a href="#"><img src="img/classify_04.jpg"/></a><p>收纳</p></div>
+							<div><a href="#"><img src="img/classify_05.jpg"/></a><p>护肤</p></div>
+							<div><a href="#"><img src="img/classify_06.jpg"/></a><p>棒球帽</p></div>
+							<div><a href="#"><img src="img/classify_07.jpg"/></a><p>眼镜</p></div>
+							<div><a href="#"><img src="img/classify_08.jpg"/></a><p>首饰</p></div>
+							<div><a href="#"><img src="img/classify_09.jpg"/></a><p>保温杯</p></div>
+							<div><a href="#"><img src="img/classify_10.jpg"/></a><p>潮流女包</p></div>
+							<div><a href="#"><img src="img/classify_11.jpg"/></a><p>旅行必备</p></div>
+							<div><a href="#"><img src="img/classify_12.jpg"/></a><p>打底裤</p></div>
+							<div><a href="#"><img src="img/classify_07.jpg"/></a><p>眼镜</p></div>
+							<div><a href="#"><img src="img/classify_08.jpg"/></a><p>首饰</p></div>
+							<div><a href="#"><img src="img/classify_09.jpg"/></a><p>保温杯</p></div>
+							<div><a href="#"><img src="img/classify_01.jpg"/></a><p>牛仔裤</p></div>
+							<div><a href="#"><img src="img/classify_02.jpg"/></a><p>女卫衣</p></div>
+							<div><a href="#"><img src="img/classify_03.jpg"/></a><p>空气净化</p></div>
+							<div><a href="#"><img src="img/classify_01.jpg"/></a><p>牛仔裤</p></div>
+							<div><a href="#"><img src="img/classify_02.jpg"/></a><p>女卫衣</p></div>
+							<div><a href="#"><img src="img/classify_03.jpg"/></a><p>空气净化</p></div>
+						</div>
+					    </div>
+					</div>
+				</li>
+				<li><span>女人</span></li>
+				<li><span>美妆</span>
+					<div class="right">
+						<div class="ctitle"><img src="img/bmtitle.jpg"/></div>
+						<div class="more">
+							<div><a href="#"><img src="img/bm_01.jpg"/></a><p>面膜</p></div>
+							<div><a href="#"><img src="img/bm_02.jpg"/></a><p>洁面</p></div>
+							<div><a href="#"><img src="img/bm_03.jpg"/></a><p>气垫BB霜</p></div>
+							<div><a href="#"><img src="img/bm_04.jpg"/></a><p>护肤</p></div>
+							<div><a href="#"><img src="img/bm_05.jpg"/></a><p>眼霜</p></div>
+							<div><a href="#"><img src="img/bm_06.jpg"/></a><p>美白防晒</p></div>
+							<div><a href="#"><img src="img/bm_07.jpg"/></a><p>补水保湿</p></div>
+							<div><a href="#"><img src="img/bm_08.jpg"/></a><p>隔离霜</p></div>
+							<div><a href="#"><img src="img/bm_09.jpg"/></a><p>卸妆</p></div>
+							<div><a href="#"><img src="img/bm_10.jpg"/></a><p>身体护理</p></div>
+							<div><a href="#"><img src="img/bm_11.jpg"/></a><p>香水</p></div>
+							<div><a href="#"><img src="img/bm_12.jpg"/></a><p>遮瑕膏</p></div>
+							<div><a href="#"><img src="img/bm_07.jpg"/></a><p>补水保湿</p></div>
+							<div><a href="#"><img src="img/bm_08.jpg"/></a><p>隔离霜</p></div>
+							<div><a href="#"><img src="img/bm_09.jpg"/></a><p>卸妆</p></div>
+						</div>
+					</div>
+				</li>
+					<li><span>数码</span></li>
+					<li><span>居家</span></li>
+					<li><span>零食</span></li>
+					<li><span>男人</span></li>
+					<li><span>创意</span></li>
+				</ul>
+				
+			</div>
+		</div>
+		<!--领券-->
+		<div class="guowu">
+			<div class="Ttitle">
+					<span>购物券</span>
+			</div>
+			<img src="img/ticket.jpg"/>
+		</div>
+		<!--专题-->
+		<div class="zhuanti">
+			<div class="head">
+				<div class="title">
+					<p>臭美妞</p>
+				</div>
+				<div class="erji">
+					<ul class="erji_list">
+						<li>最新上架</li>
+						<li>臭美妞</li>
+						<li>生活家</li>
+						<li>骚包男</li>
+						<li>吃不胖</li>
+						<li>魔法镜</li>
+						<li>喊我爸爸</li>
+						<li>狗儿子</li>
+						<li>不孝子</li>
+					</ul>
+				</div>
+			</div>
+			<div class="con">
+				<div class="pic">
+					<img src="img/cm_01.jpg"/>
+				</div>
+				<div class="pic2">
+					<img src="img/cm_02.jpg" />
+				</div>
+				<div class="pic3">
+					<img src="img/cm_01.jpg" />
+				</div>
+				<div class="pic4">
+					<img src="img/cm_02.jpg" />
+				</div>
+				<div class="pic5">
+					<img src="img/cm_01.jpg" />
+				</div>
+			</div>
+		</div>
+		<!--底部导航栏-->
+		<div class="dibu container-fluid text-center">
+			<nav class="navbar navbar-default navbar-fixed-top qingchu">
+				<div class="container-fluid shye">
+					<p class="glyphicon glyphicon-edit shye_02"></p>
+					<p>首页<span class="glyphicon glyphicon-menu-down shye_01"></span></p>
+					<p class="glyphicon glyphicon-search shye_03"></p>
+				</div>
+			</nav>
+			<nav class="navbar navbar-default navbar-fixed-bottom">
+				<div class="container-fluid text-center q4">
+					<div class="row dhl">
+						<div class="col-xs-3">
+						    <p class="glyphicon glyphicon-lock q5"></p>
+						    <p class="ziti_02">商品</p>
+						</div>
+						<div class="col-xs-3">
+						    <p class="glyphicon glyphicon-list-alt q5"></p>
+						    <p class="ziti_02">分类</p>
+						</div>
+						<div class="col-xs-3">
+						    <p class="glyphicon glyphicon-gift q5"></p>
+						    <p class="ziti_02">领券</p>
+						</div>
+						<div class="col-xs-3">
+						    <p class="glyphicon glyphicon-file q5"></p>
+						    <p class="ziti_02">专题</p>
+						</div>
+						<div class="col-xs-3">
+						    <p class="glyphicon glyphicon-user q5 q6"></p>
+						    <p class="ziti_02">我的</p>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function(){
+//			底部导航栏
+			$(".dhl div").eq(0).find("p").css("color","red");
+			$(".dhl div").on("click",function(){
+				$(this).find("p").css("color","red");
+				$(this).siblings().find("p").css("color","");
+			})
+			$(".shye_03").on("click",function(){
+				$(window).attr("location","SearchInput.html");
+			})
+			$(".fdj_01").on("click",function(){
+				$(window).attr("location","SearchInput.html");
+			})
+//			领券
+            $(".ljuan").on("click",function(){
+            	$(".guowu").css("display","block");
+				$(".qingchu").css("display","none");
+				$(".box_01").css("display","none");
+				$(".box").css("display","none");
+				$("#content").css("display","none");
+				$(".zhuanti").css("display","none");
+				$(".dhl div").eq(2).find("p").css("color","red");
+				$(".dhl div").eq(0).find("p").css("color","");
+            })
+			$(".dhl div").eq(0).on("click",function(){
+				$(".box_01").css("display","block");
+				$(".qingchu").css("display","block");
+				$(".box").css("display","none");
+				$("#content").css("display","none");
+				$(".guowu").css("display","none");
+				$(".zhuanti").css("display","none");
+			})
+			$(".dhl div").eq(1).on("click",function(){
+				$("#content").css("display","block");
+				$(".qingchu").css("display","none");
+				$(".box_01").css("display","none");
+				$(".box").css("display","none");
+				$(".zhuanti").css("display","none");
+				$(".guowu").css("display","none");
+			})
+			$(".dhl div").eq(2).on("click",function(){
+				$(".guowu").css("display","block");
+				$(".qingchu").css("display","none");
+				$(".box_01").css("display","none");
+				$(".box").css("display","none");
+				$("#content").css("display","none");
+				$(".zhuanti").css("display","none");
+			})
+			$(".dhl div").eq(3).on("click",function(){
+				$(".zhuanti").css("display","block");
+				$(".qingchu").css("display","none");
+				$(".box_01").css("display","none");
+				$(".box").css("display","none");
+				$("#content").css("display","none");
+				$(".guowu").css("display","none");
+			})
+			$(".dhl div").eq(4).on("click",function(){
+				$(".box").css("display","block");
+				$(".box_01").css("display","none");
+				$(".qingchu").css("display","none");
+				$(".guowu").css("display","none");
+				$(".zhuanti").css("display","none");
+			})
+			$(".sy_01").on("click",function(){
+	      			$(window).attr("location","xiangqing.html");
+	      		})
+//			待付款导航栏
+            $(".dfk div").on("click",function(){
+            	$(this).find("p").css("color","deeppink");
+            	$(this).siblings().find("p").css("color","");
+            })
+            $(".tzhuan_01").on("click",function(){
+            	$(window).attr("location","tuichudenglu.html");
+            })
+            
+            $(".msdl").on("click",function(){
+            	$(".msdl").css("background-color","#999");
+            })
+            
+            $(".dianji_01 ul").on("mousemove",function(){
+            	$(this).css("background-color","#9D9D9D");
+            	$(this).find(".q2_tu").css("color","white");
+            	$(this).find(".q2").css({"background-color":"white","color":"red"});
+            	$(this).siblings().css("background-color","");
+            	$(this).siblings().find(".q2_tu").css("color","");
+            	$(this).siblings().find(".q2").css({"background-color":"","color":""});
+            })
+            $(".msdl_01").on("click",function(){
+            	$(window).attr("location","login.html");
+            })
+//          分类
+            $(".list li").eq(0).css("background","white");
+			$(".list li").on("click",function(){
+				$(this).css("background","white");
+				$(this).siblings().css("background","");
+			})
+//				专题
+            $(".erji_list li").eq(0).css("border-bottom","solid 4px red");
+            $(".erji_list li").on("click",function(){
+            	$(this).css("border-bottom","solid 4px red");
+            	$(this).siblings().css("border-bottom","");
+            })
+//			回到顶部
+            $(window).scroll(function(){
+				if($(document).scrollTop()>=100){
+					$(".qbhd_02").css("display","block");
+				}else{
+					$(".qbhd_02").css("display","none");
+				}
+				$(".qbhd_02").on("click",function(){
+					$(document).scrollTop(0);
+				})
+			})
+		})
+//		轮播图
+		window.onload = function(){
+	      	//获得slider插件对象
+			var gallery = mui('.mui-slider');
+			gallery.slider({
+			  interval:2000//自动轮播周期，若为0则不自动播放，默认为0；
+			});
+	      	mui.init();
+	      }
+	</script>
+</html>

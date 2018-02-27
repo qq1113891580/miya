@@ -1,0 +1,126 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#content{
+	width: 90vw;
+	height: 100vh;
+	position: relative;
+	left: 5vw;
+}
+.detial{
+	width: 100vw;
+	height: 9vh;
+	line-height: 9vh;
+	font-size: 1.3em;
+	background: white;
+	border-bottom:solid 1px #A9A7A8;
+	position: absolute;
+	left: -5vw;
+}
+.detial a{
+	position: absolute;
+	left: 4%;
+}
+.detial p{
+	position: absolute;
+	left: 45%;
+}
+.toux{
+	width: 24vw;
+	height: 24vw;
+	background: #FF7700;
+	border-radius: 100%;
+	position: absolute;
+	left: 37%;
+	top: 16%;
+}
+.toux img{
+	width: 24vw;
+	height: 24vw;
+}
+input{
+	width: 90vw;
+	height: 10vw;
+	outline: none;
+	border: none;
+	border-bottom: 2px solid #FF5000;
+	font-size: 1em;
+}
+.inp1{
+	text-indent: 20px;
+	position: absolute;
+	top: 61vw;
+}
+.inp2{
+	text-indent: 20px;
+	position: absolute;
+	top: 82vw;
+}
+.RegForget{
+	width: 90vw;
+	height: 10vw;
+	line-height: 10vw;
+	font-size: 0.6em;
+	position: absolute;
+	top: 95vw;
+}
+.RegForget a{
+	text-decoration: none;
+	color: #555555;
+}
+.RegForget a:nth-child(2){
+	position: absolute;
+	right: 0vw;
+}
+.login{
+	width: 90vw;
+	height: 12vw;
+	line-height: 12vw;
+	text-align: center;
+	font-size: 1.4em;
+	color: white;
+	background: #FF7700;
+	border-radius: 6vw;
+	position: absolute;
+	top: 112vw;
+}
+.duanxin{
+	color: #FF5000;
+	background: none;
+	border: 2px solid #FF5000;
+	position: absolute;
+	top: 130vw;
+}
+.denglu_01{
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0,0,0,0.2);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	display: none;
+}
+.denglu_02{
+	width: 180px;
+	height: 100px;
+	border-radius: 5px;
+	text-align: center;
+	background-color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -50px;
+	margin-left: -90px;
+	z-index: 100;
+}
+.denglu_03{
+	color: red;
+	margin-top: 30px;
+}
+.denglu_04{
+	width: 100%;
+	border-top: 1px solid #9D9D9D;
+	margin-top: 15px;
+	line-height: 30px;
+}

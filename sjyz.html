@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
+		<link rel="stylesheet" href="css/tianxie.css"/>
+		<script src="js/jquery-1.12.0.js"></script>
+		<script src="js/bootstrap.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$(".diyi_01").on("click",function(){
+					$(".diyi_01").css("color","red");
+				})
+				$(".shiwode").on("click",function(){
+					$(window).attr("location","zhuce.html");
+				})
+				$(".fh_01").on("click",function(){
+					window.history.go(-1);
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<div class="container-fluid diyi">
+			<div class="row kong">
+				<p class="glyphicon glyphicon-menu-left col-xs-1 diyi_01"></p>
+				<p class="col-xs-3 diyi_02">关闭</p>
+				<p class="col-xs-8 text-center diyi_03">详情</p>
+			</div>
+		</div>
+		<div class="container-fluid tbzc_01 text-center">
+			<button class="btn btn-default fanhui fh_01" type="submit">返回</button>
+			<p class="tzc">手机验证</p>
+		</div>
+		<div class="container-fluid text-center">
+			<div><img src="img/niuzai_01.jpg" class="img-responsive img-circle center-block zidong"/></div>
+			<p style="margin-top: 15px;">123123243243534</p>
+			<p class="zidong_01">手机号<span style="color: red;">15240652174</span>已被以上账户使用<br/>请确认该账户是否为你本人所有</p>
+		</div>
+		<div class="container-fluid anniu">
+			<button type="button" class="btn btn-lg btn-block shiwode">是我的，立即登录</button>
+			<button type="button" class="btn btn-default btn-lg btn-block" style="margin-top: 10px;">使用邮箱继续注册</button>
+		</div>
+	</body>
+</html>

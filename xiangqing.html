@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	    <title></title>
+	    <script src="js/mui.min.js"></script>
+	    <script src="js/jquery-1.12.0.js"></script>
+	    <link href="css/mui.min.css" rel="stylesheet"/>
+	    <link rel="stylesheet" href="css/xiangqing.css"/>
+	    <link rel="stylesheet" href="css/niuzaiku.css"/>
+	    <script type="text/javascript" charset="utf-8">
+	      	mui.init();
+	      	$(function(){
+	      		$(window).scroll(function(){
+	      			if($(document).scrollTop()>=300){
+	      				$(".digbu").css("display","none");
+	      			}else{
+	      				$(".digbu").css("display","block");
+	      			}
+	      		})
+	      		$(".xuanze").on("click",function(){
+	      			$(".nzk-mb").css("display","block");
+	      		})
+	      		$(".cuo").on("click",function(){
+	      			$(".nzk-mb").css("display","none");
+	      		})
+	      		$(".jrgw").on("click",function(){
+	      			$(".nzk-mb").css("display","block");
+	      		})
+	      	})
+	    </script>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav xq_01">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		    <h1 class="mui-title">详情</h1>
+		</header>
+		<div class="mui-content">
+		    <div id="slider" class="mui-slider" >
+		      <div class="mui-slider-group mui-slider-loop">
+		        <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+		        <div class="mui-slider-item mui-slider-item-duplicate">
+		          <a href="#">
+		            <img src="img/niuzai_04.jpg">
+		          </a>
+		        </div>
+		        <!-- 第一张 -->
+		        <div class="mui-slider-item">
+		          <a href="#">
+		            <img src="img/niuzai_01.jpg">
+		          </a>
+		        </div>
+		        <!-- 第二张 -->
+		        <div class="mui-slider-item">
+		          <a href="#">
+		            <img src="img/niuzai_02.jpg">
+		          </a>
+		        </div>
+		        <!-- 第三张 -->
+		        <div class="mui-slider-item">
+		          <a href="#">
+		            <img src="img/niuzai_03.jpg">
+		          </a>
+		        </div>
+		        <!-- 第四张 -->
+		        <div class="mui-slider-item">
+		          <a href="#">
+		            <img src="img/niuzai_04.jpg">
+		          </a>
+		        </div>
+		        <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+		        <div class="mui-slider-item mui-slider-item-duplicate">
+		          <a href="#">
+		            <img src="img/niuzai_01.jpg">
+		          </a>
+		        </div>
+		      </div>
+		      <div class="mui-slider-indicator">
+		        <div class="mui-indicator mui-active"></div>
+		        <div class="mui-indicator"></div>
+		        <div class="mui-indicator"></div>
+		        <div class="mui-indicator"></div>
+		      </div>
+		    </div>
+		    <div class="slider_01">
+		    	<p style="color: black;font-size: 15px;">Avon/雅芳艳阳防晒隔离乳75克 SPF30+/PA+++ 清爽防晒不油腻</p>
+		    	<p class="pjk"><span style="color: red;font-size: 18px;display: inline-block;"><span style="display:inline-block;padding-top: 5px;">￥</span><span style="font-size: 24px;margin-left: -3px;">49</span></span><span class="slider_02">年终特惠</span></p>
+		    	<p>价格：<span style="text-decoration: line-through;">￥59</span></p>
+		    	<p class="pjk_01">
+		    		<span>快递：0.00</span>
+		    		<span style="text-align: center;">月销量：2件</span>
+		    		<span style="text-align: right;margin-right: 10px;">湖南长沙</span>
+		    	</p>
+		    </div>
+		    <div class="slider_03">
+		    	<div class="dier_01">
+		    		<div class="dier_02" style="border-bottom: solid 1px #C7C7CC;">
+		    			<p class="img_01" style="margin-bottom: 1px;"><img src="img/yhlq.jpg"/><span>领取优惠券</span></p>
+		    			<p class="img_01"><img src="img/yhlq.jpg"/><span>领取优惠券</span></p>
+		    			<span class="lqu">领取</span>
+		    		</div>
+		    		<div class="san_01">
+			    		<p style="margin-bottom: 1px;"><span class="cuxiao">促销</span>满88元，享部分地区包邮</p>
+			    		<p><span class="cuxiao">积分</span>购买可得13积分</p>
+			    		<span class="cuxiao_01">...</span>
+			    	</div>
+		    	</div>
+		    </div>
+		    <div class="xuanze">
+		    	<span class="xuanze_01">请选择口味</span>
+		    	<span class="xuanze_02">...</span>
+		    </div>
+		    <div class="xuanze">
+		    	<span class="xuanze_01">产品参数</span>
+		    	<span class="xuanze_02">...</span>
+		    </div>
+		    <div class="pingjia" style="margin-bottom: 50px;">
+		    	<p class="pingjia_01">商品评价(98666)</p>
+		    	<div class="pingjia_02">
+		    		<span>快递不错(9092)</span>
+		    		<span>味道不错(9092)</span>
+		    		<span>划算(9092)</span>
+		    		<span>口味(9092)</span>
+		    		<span>质量好(9092)</span>
+		    		<span>人群(9092)</span>
+		    	</div>
+		    	<div class="pingjia_03">
+		    		<p class="toxiang"><img src="img/niuzai_03.jpg" style="border-radius: 100%;width: 25px;height: 25px;"/><span>t***3</span></p>
+		    		<p class="toxiang_01">此用户没有填写评论！</p>
+		    		<p class="toxiang_02">2018-02-06 某宝：嘎嘎的好的噶很多</p>
+		    	</div>
+		    	<div class="chakan"><span>查看更多评价</span></div>
+		    </div>
+		    <div class="digbu">
+		    	<p class="digbu_01 digbu_left"><span class="mui-icon mui-icon-back"></span></p>
+		    	<p class="digbu_02"><img src="img/360.png"/><span style="margin-left: 5px;">App新人领388元大礼包！</span></p>
+		    	<p class="digbu_01 digbu_rigt"><span class="mui-icon mui-icon-home"></span></p>
+		    </div>
+		</div>
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item mui-active">
+		        <span class="mui-icon mui-icon-chatbubble"></span>
+		        <span class="mui-tab-label">客服</span>
+		    </a>
+		    <a class="mui-tab-item">
+		        <span class="mui-icon mui-icon-home"></span>
+		        <span class="mui-tab-label">进店</span>
+		    </a>
+		    <a class="mui-tab-item">
+		        <span class="mui-icon mui-icon-download"></span>
+		        <span class="mui-tab-label">收藏</span>
+		    </a>
+		    <a class="mui-tab-item jrgw" style="width: 7px;background-color: #FF9500;">
+		        <span class="mui-tab-label">加入购物车</span>
+		    </a>
+		    <a class="mui-tab-item jrgw" style="width: 7px;background-color: #FF0036;">
+		        <span class="mui-tab-label">立即购买</span>
+		    </a>
+		</nav>
+		<!--这里是蒙版-->
+	   	<div class="nzk-mb">
+	   		<!--这里是商品选项-->
+		   	<div class="nzk-kc">
+		   		<div class="nzk-kc-xx">
+		   			<div class="nzk-kc-xx-a">
+		   				<div class="nzk-kc-xx-a-sp">
+		   					<img src="img/bm_03.jpg"/>
+		   				</div>
+		   				<ul class="nzk-kc-xx-a-sl">
+	   						<li><h4>￥00</h4></li>
+	   						<li><p>库存 <span>00</span>件</p></li>
+	   						<li><p>已选择: <span>00</span></p></li>
+	   					</ul>
+	   					<span class="mui-icon mui-icon-close cuo"></span>
+		   			</div>
+		   			<div class="nzk-kc-xx-b">
+		   				<div class="nzk-kc-xx-b-xx">
+		   					<p>化妆品净含量</p>
+		   					<ul class="nzk-kc-xx-b-xz">
+		   						<li><p>75g</p></li>
+		   						<li><p>125g</p></li>
+		   					</ul>
+		   				</div>
+		   			</div>
+		   			<div class="nzk-kc-xx-c">
+		   				<p>购买数量</p>
+		   				<div class="mui-numbox nzk-kc-xx-c-xz" data-numbox-min='1' data-numbox-max='99'>
+								<button class="mui-btn mui-btn-numbox-minus" type="button">-</button>
+								<input id="test" class="mui-input-numbox" type="number" value="1" />
+								<button class="mui-btn mui-btn-numbox-plus" type="button">+</button>
+							</div>
+		   			</div>
+		   		</div>
+		   		<button class="nzk-kc-qd">确定</button>
+		   	</div>
+	   	</div>
+	</body>
+</html>

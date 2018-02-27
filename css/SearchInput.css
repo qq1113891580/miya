@@ -1,0 +1,99 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#content{
+	width: 100vw;
+	height: 100vh;
+	background:white;
+}
+.SItitle{
+	width: 100vw;
+	height: 12vw;
+	line-height: 9vw;
+	font-size: 1.5em;
+	/*background: white;*/
+	box-sizing: border-box;
+	border-bottom:solid 1px #B7B7B7;
+}
+.SItitle a{
+	position: absolute;
+	left: 4%;
+	top: 0.8%;
+}
+.SItitle input{
+	width: 80vw;
+	height: 8vw;
+	border: 1px solid #B7B7B7;
+	border-radius: 1vw;
+	outline: none;
+	background: url(../img/searchlogo.png) no-repeat;
+	background-size: 6vw 6vw;
+	background-position: 1vw 1vw;
+	margin-left: 12vw;
+	/*margin-top: 1%;*/
+}
+.SIctn{
+	width: 100vw;
+	height: 93vh;
+	background: #EDECF1;
+}
+.SIctn ul{
+	height: 10vw;
+	line-height: 10vw;
+	background: white;
+}
+.SIctn ul li{
+	height: 9.8vw;
+	list-style: none;
+	float: left;
+	box-sizing: border-box;
+	margin-left: 16vw;
+}
+.SIctn ul li:first-child{
+	margin-left: 5vw;
+}
+.SIctn ul li:hover{
+	color: #AE000D;
+	border-bottom: 3px solid #AE000D;
+}
+.over{
+	width: 100vw;
+	height: 155vw;
+	overflow: hidden;
+	overflow-y: scroll;
+}
+.over::-webkit-scrollbar{
+	display: none;
+}
+.Scon{
+	width: 102vw;
+	height: 156vh;
+	/*background: fuchsia;*/
+	position: relative;
+	left: 0;
+}
+.Scon div{
+	width: 49vw;
+	height: 67vw;
+	float: left;
+	text-align: center;
+	background: white;
+	margin-top: 2vw;
+	margin-right: 2vw;
+}
+.Scon img{
+	width: 49vw;
+	height: 50vw;
+}
+.Scon a{
+	text-decoration: none;
+	color: #000000;
+}
+.Scon p{
+	font-size: 0.95em;
+	margin-bottom: 2vw;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
